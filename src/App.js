@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 function App() {
-    const [accounts, setAccounts] = useState(12);
+    const [accounts, setAccounts] = useState(12); // меняем число в useState чтобы изменить число начальных аккаунтов
     const [totalEarned, setTotalEarned] = useState(0);
     
     useEffect(() => {
@@ -8,7 +8,7 @@ function App() {
     }, []);
   
     const calculateTotalEarned = () => {
-      let weeks = 51;
+      let weeks = 51; // меняем чтоб изменить число недель -1 (сейчас ровно год)
       let earned = 0;
       let currentAccounts = accounts;
   
