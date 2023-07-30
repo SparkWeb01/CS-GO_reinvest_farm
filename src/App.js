@@ -7,7 +7,7 @@ function App() {
       calculateTotalEarned();
     }, []);
   
-    const calculateTotalEarned = (valueb) => {
+    const calculateTotalEarned = () => {
       let weeks = 51;
       let earned = 0;
       let currentAccounts = accounts;
